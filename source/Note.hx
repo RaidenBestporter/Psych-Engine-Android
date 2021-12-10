@@ -90,6 +90,14 @@ class Note extends FlxSprite
 					colorSwap.hue = 0;
 					colorSwap.saturation = 0;
 					colorSwap.brightness = 0;
+					case 'Poison Note':
+					ignoreNote = mustPress;
+					reloadNote('POISON');
+					noteSplashTexture = 'HURTnoteSplashes';
+					colorSwap.hue = 0;
+					colorSwap.saturation = 0;
+					colorSwap.brightness = 0;
+					
 					if(isSustainNote) {
 						missHealth = 0.1;
 					} else {

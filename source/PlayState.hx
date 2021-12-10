@@ -3570,6 +3570,8 @@ class PlayState extends MusicBeatState
 					note.destroy();
 				}
 				return;
+				case 'Poison Note':
+				    health -= 0.10
 			}
 
 			if (!note.isSustainNote)
